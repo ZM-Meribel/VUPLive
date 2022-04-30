@@ -1,0 +1,179 @@
+site_name: Vup Live Wiki
+site_description: Vuplive Wiki 是一个关于虚拟主播有关知识的整合站点，提供有趣又实用的虚拟主播有关知识以及其他有帮助的内容，帮助广大虚拟主播们更快更深入地了解V圈！
+site_author: Vup Live Wiki
+site_url: https://oi-wiki.org
+strict: false
+
+repo_name: 'Vup Live Team'
+repo_url: 'https://github.com/sakurayun/VUPLive'
+edit_uri: 'edit/master/docs/'
+
+copyright: 'Copyright &copy; 2022 Vup Live Team'
+google_analytics:
+  - 'UA-124485594-1'
+  - 'auto'
+
+theme:
+  name: material
+  custom_dir: overrides
+  static_templates:
+    - 404.html
+  language: 'zh'
+  palette:
+    - scheme: default
+      primary: 'white'
+      accent: 'red'
+      toggle:
+        icon: material/toggle-switch-off-outline 
+        name: Switch to dark mode
+    - scheme: slate
+      primary: 'black'
+      accent: 'red'
+      toggle:
+        icon: material/toggle-switch
+        name: Switch to light mode
+  include_search_page: false
+  search_index_only: true
+  feature:
+    tabs: true
+  font:
+    text: 'Fira Sans'
+    code: 'Fira Mono'
+  icon:
+    logo: fontawesome/brands/gitkraken
+    repo: fontawesome/brands/bilibili
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
+      bilibili: fontawesome-brands-bilibili
+  tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+  favicon: https://s2.loli.net/2022/04/27/PtqDAOjm3E6UauC.png
+  features:
+    - toc.follow
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - navigation.toc
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - header.autohide
+    - content.code.annotate
+
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: 中文简体
+      link: /
+      lang: zh
+    - name: 日本语
+      link: /ja/
+      lang: ja
+  tags:
+    HTML5: html
+    JavaScript: js
+    CSS: css
+  social:
+    - icon: fontawesome/brands/bilibili 
+      link: https://space.bilibili.com/35192221
+    - icon: material/email
+      link: mailto:2063850823@qq.com
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/yun_er_unia
+    - icon: fontawesome/brands/github
+      link: https://github.com/sakurayun/VUPLive
+
+extra_javascript:
+  - _static/js/extra.js
+  - assets/vendor/mathjax/MathJax.js?config=TeX-MML-AM_CHTML
+  - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
+  - javascripts/tablesort.js
+
+extra_css:
+  - _static/css/extra.css
+  - stylesheets/extra.css
+  - stylesheets/cc.css
+  - stylesheets/huo.css
+  - stylesheets/duoyun.css
+  - stylesheets/emoji.css
+
+plugins:
+  - search:
+      lang: 
+        - en
+        - zh
+        - ja
+      separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
+  - tags
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+      enable_creation_date: true
+markdown_extensions:
+  - footnotes
+  - abbr
+  - pymdownx.snippets
+  - tables
+  - admonition
+  - codehilite:
+      guess_lang: false
+      linenums: true
+  - def_list
+  - attr_list
+  - meta
+  - md_in_html
+  - toc:
+      permalink: true
+      title: On this page
+      slugify: !!python/name:pymdownx.slugs.uslugify
+      toc_depth: 3
+  - pymdownx.arithmatex
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+      options:
+        custom_icons:
+          - overrides/.icons
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.mark
+  - pymdownx.snippets
+  - pymdownx.progressbar
+  - pymdownx.smartsymbols
+  - pymdownx.superfences:
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+  - abbr
+  - smarty
+  - sane_lists
+  - pymdownx.tabbed:
+        alternate_style: true
+  - pymdownx.highlight:
+        anchor_linenums: true
