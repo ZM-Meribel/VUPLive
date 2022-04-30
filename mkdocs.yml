@@ -9,16 +9,13 @@ repo_url: 'https://github.com/sakurayun/VUPLive'
 edit_uri: 'edit/master/docs/'
 
 copyright: 'Copyright &copy; 2022 Vup Live Team'
-google_analytics:
-  - 'UA-124485594-1'
-  - 'auto'
 
 theme:
   name: material
   custom_dir: overrides
   static_templates:
     - 404.html
-  language: 'zh'
+  language: 'en'
   palette:
     - scheme: default
       primary: 'white'
