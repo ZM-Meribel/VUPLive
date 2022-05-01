@@ -1,24 +1,21 @@
 site_name: Vup Live Wiki
 site_description: Vuplive Wiki 是一个关于虚拟主播有关知识的整合站点，提供有趣又实用的虚拟主播有关知识以及其他有帮助的内容，帮助广大虚拟主播们更快更深入地了解V圈！
 site_author: Vup Live Wiki
-site_url: https://oi-wiki.org
+site_url: https://vuplive.com
 strict: false
 
 repo_name: 'Vup Live Team'
 repo_url: 'https://github.com/sakurayun/VUPLive'
-edit_uri: 'edit/master/docs/'
+edit_uri: 'https://vuplive.com/intro/edit-landing/?ref='
 
 copyright: 'Copyright &copy; 2022 Vup Live Team'
-google_analytics:
-  - 'UA-124485594-1'
-  - 'auto'
 
 theme:
   name: material
   custom_dir: overrides
   static_templates:
     - 404.html
-  language: 'zh'
+  language: 'en'
   palette:
     - scheme: default
       primary: 'white'
@@ -105,7 +102,6 @@ extra:
 
 extra_javascript:
   - _static/js/extra.js
-  - assets/vendor/mathjax/MathJax.js?config=TeX-MML-AM_CHTML
   - https://unpkg.com/tablesort@5.3.0/dist/tablesort.min.js
   - javascripts/tablesort.js
 
