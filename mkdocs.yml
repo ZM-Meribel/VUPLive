@@ -15,7 +15,7 @@ theme:
   custom_dir: overrides
   static_templates:
     - 404.html
-  language: 'zh'
+  language: 'en'
   palette:
     - scheme: default
       primary: 'white'
@@ -121,9 +121,6 @@ plugins:
         - ja
       separator: '[\s\-,:!=\[\]()"/]+|(?!\b)(?=[A-Z][a-z])|\.(?!\d)|&[lg]t;'
   - tags
-  - git-revision-date-localized:
-      fallback_to_build_date: true
-      enable_creation_date: true
 markdown_extensions:
   - footnotes
   - abbr
