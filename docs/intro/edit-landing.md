@@ -25,6 +25,6 @@ disqus:
 		}
 		return dft;
 	}
-	document.getElementById("btn-startedit").href = "https://github.com/sakurayun/VUPLive/edit/master/docs" + getQueryVariable("ref", "");
+	document.getElementById("btn-startedit").href = "https://github.com/sakurayun/VUPLive/edit/main/docs" + getQueryVariable("ref", "");
 </script>
 
